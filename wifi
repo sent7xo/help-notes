@@ -1,0 +1,10 @@
+#- WIFI -#
+
+# list wifi
+sudo iwlist wlan0 scan
+
+# change wifi
+/etc/network/interfaces
+
+# restart network
+sudo ifdown wlan0; sudo ifup -v wlan0

@@ -1,0 +1,19 @@
+#- FONTS -#
+
+# FONTCONFIG
+# check fonts & update fonts.conf settings (effects will be applied
+#					    in new applications)
+fc-cache -fv
+
+# X FONTS
+# create fonts.dir & fonts.scale
+mkfontdir
+mkfontscale
+
+# add new font path
+# add this to .xinitrc!
+xset +fp /path/to/dir/
+xset fp rehash
+
+# reset path
+xset fp

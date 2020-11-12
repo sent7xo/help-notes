@@ -1,0 +1,5 @@
+Find window ID:
+ hidden -c
+
+Activate window:
+ xdotool windowraise `ID`

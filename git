@@ -1,0 +1,63 @@
+#- GIT -#
+
+# TREES
+Working Directory
+       |
+       V
+  INDEX (Stage)
+       |
+       V
+     HEAD
+
+# COMMANDS
+# create repo
+git init
+
+# add to INDEX
+git add %
+
+# remove file (literally rm it)
+git rm %
+
+# commit to HEAD
+git commit -m '%'
+
+# push to remote repo
+git push origin master
+
+# connect local repo to remote repo
+git remote add origin %
+
+# update local repo with remote repo
+git pull
+git fetch && git merge
+
+# create branch
+git checkout -b branch_name
+
+# switch branch
+git checkout master
+
+# delete branch
+git branch -d branch_name
+
+# push branch
+git push origin branch_name
+
+# merge branch
+git merge branch_name
+
+# view changes from branches
+git diff source_branch target_branch
+
+# tag
+git tag tag_name commit_id
+
+# log
+git log
+
+# restore
+git checkout -- file_name
+
+# hard restore
+git checkout -f

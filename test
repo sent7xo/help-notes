@@ -1,0 +1,31 @@
+#- TEST -#
+
+# file
+-a	if file exists
+-b	if file exists and is a block special file
+-c	if file exists and is a character special file
+-d	if file exists and is a directory
+-e	if file exists
+-f	if file exists and is a regular file
+-g	if file exists and its set-group-id bit is set
+-h	if file exists and is a symbolic link
+-k	if file exists and its sticky-bit is set
+-p	if file exists and is a named pipe (fifo)
+-r	if file exists and is readable
+-s	if file exists and its size is greater than zero
+-t	if file descriptor is open and refers to a terminal
+-u	if file exists and its set-user-id bit is set
+-w	if file exists and is writable
+-x	if file exists and is executable
+-G	if file exists and is owned by the effective group id
+-L	if file exists and is a symbolic link
+-N	if file exists and has been modified since last read
+-O	if file exists and is owned by the effective user id
+-S	if file exists and is a socket
+
+# variable
+-o 	if shell option is enabled
+-v 	if variable has a value assigned
+-R 	if variable is a name reference
+-z 	if the length of string is zero
+-n 	if the length of string is non-zero
