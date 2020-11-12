@@ -20,13 +20,13 @@ git add %
 git rm %
 
 # commit to HEAD
-git commit -m '%'
+git commit -m 'message'
 
 # push to remote repo
 git push origin master
 
 # connect local repo to remote repo
-git remote add origin %
+git remote add origin remote_repo
 
 # update local repo with remote repo
 git pull
