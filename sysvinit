@@ -1,0 +1,8 @@
+#- SYSVINIT -#
+
+# COMMANDS
+# list all services
+sysv-rc-conf --list
+
+# set runlevel
+sysv-rc-conf --level %
